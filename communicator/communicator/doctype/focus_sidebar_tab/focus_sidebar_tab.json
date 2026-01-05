@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-25 09:30:00.301303",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_id",
+  "tab_label",
+  "icon",
+  "color",
+  "enable",
+  "source_doctype",
+  "route_doctype",
+  "filter_json",
+  "field_title",
+  "field_description",
+  "field_date",
+  "field_badge",
+  "is_public",
+  "roles",
+  "users"
+ ],
+ "fields": [
+  {
+   "fieldname": "tab_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tab ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tab_label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tab Label",
+   "reqd": 1
+  },
+  {
+   "fieldname": "icon",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Icon",
+   "reqd": 1
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Color",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "source_doctype",
+   "fieldtype": "Link",
+   "label": "Source Doctype",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "route_doctype",
+   "fieldtype": "Link",
+   "label": "Route Doctype",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "filter_json",
+   "fieldtype": "Code",
+   "label": "Filter Criteria"
+  },
+  {
+   "fieldname": "field_title",
+   "fieldtype": "Data",
+   "label": "Title Field",
+   "reqd": 1
+  },
+  {
+   "fieldname": "field_description",
+   "fieldtype": "Data",
+   "label": "Description Field"
+  },
+  {
+   "fieldname": "field_date",
+   "fieldtype": "Data",
+   "label": "Date Fields"
+  },
+  {
+   "fieldname": "field_badge",
+   "fieldtype": "Data",
+   "label": "Badge Field"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_public",
+   "fieldtype": "Check",
+   "label": "Is Public"
+  },
+  {
+   "fieldname": "roles",
+   "fieldtype": "Table",
+   "label": "Allowed Roles",
+   "options": "Sidebar Allowed Role"
+  },
+  {
+   "fieldname": "users",
+   "fieldtype": "Table",
+   "label": "Allowed Users",
+   "options": "Sidebar Allowed User"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-25 10:39:24.702541",
+ "modified_by": "Administrator",
+ "module": "Communicator",
+ "name": "Focus Sidebar Tab",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

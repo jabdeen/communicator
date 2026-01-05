@@ -245,16 +245,18 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
-app_include_js = "/assets/communicator/js/secondsidebar.js"
+# app_include_js = "/assets/communicator/js/secondsidebar.js"
 
-doc_events = {
-    "Communication": {
-        "after_insert": "communicator.api.secondapi.notify_user_sidebar" # Change path to where you put the python code
-    },
-    "Task": {
-        "on_update": "communicator.api.secondapi.notify_user_sidebar"
-    },
-    "ToDo": {
-        "on_update": "communicator.api.secondapi.notify_user_sidebar"
-    }
-}
+# doc_events = {
+#     "Communication": {
+#         "after_insert": "communicator.api.secondapi.notify_user_sidebar" # Change path to where you put the python code
+#     },
+#     "Task": {
+#         "on_update": "communicator.api.secondapi.notify_user_sidebar"
+#     },
+#     "ToDo": {
+#         "on_update": "communicator.api.secondapi.notify_user_sidebar"
+#     }
+# }
+
+app_include_js = "/assets/communicator/js/focus_sidebar.js"
